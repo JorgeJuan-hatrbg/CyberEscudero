@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberEscudero - Contacto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> tailwind.config = { darkMode: 'class', theme: { extend: { colors: { cyber: '#06b6d4', darkbg: '#0f172a' } } } } </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-darkbg text-slate-900 dark:text-slate-100 flex flex-col min-h-screen">
+    <nav class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-cyber mono-font">CyberEscudero</a>
+            <div class="flex gap-4">
+                 <a href="index.html" class="hover:text-cyber">Inicio</a>
+                 <button id="theme-toggle"><i class="fas fa-moon dark:hidden"></i><i class="fas fa-sun hidden dark:block"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-12 flex-grow w-full">
+        <h1 class="text-3xl font-bold mb-8 text-center">Contáctanos</h1>
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-slate-900 dark:text-white">Nombre Completo</label>
+                    <input type="text" id="name" class="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-cyber focus:border-cyber block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-slate-900 dark:text-white">Correo Electrónico</label>
+                    <input type="email" id="email" class="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-cyber focus:border-cyber block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white" required>
+                </div>
+                <div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-slate-900 dark:text-white">Mensaje</label>
+                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-slate-900 bg-slate-50 rounded-lg border border-slate-300 focus:ring-cyber focus:border-cyber dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white" placeholder="Describe tu consulta de seguridad..."></textarea>
+                </div>
+                <button type="submit" class="w-full text-white bg-cyber hover:bg-cyan-700 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800 transition">Enviar Mensaje Seguro</button>
+            </form>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

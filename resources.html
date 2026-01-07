@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberEscudero - Recursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> tailwind.config = { darkMode: 'class', theme: { extend: { colors: { cyber: '#06b6d4', darkbg: '#0f172a' } } } } </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-darkbg text-slate-900 dark:text-slate-100 flex flex-col min-h-screen">
+    <nav class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-cyber mono-font">CyberGuard</a>
+            <div class="flex gap-4">
+                 <a href="index.html" class="hover:text-cyber">Inicio</a>
+                 <button id="theme-toggle"><i class="fas fa-moon dark:hidden"></i><i class="fas fa-sun hidden dark:block"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        <h1 class="text-3xl font-bold mb-8">Base de Conocimiento</h1>
+        <div class="space-y-6">
+            <a href="https://owasp.org/" target="_blank" class="block p-6 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">OWASP Top 10</h5>
+                <p class="font-normal text-slate-700 dark:text-slate-400">El estándar de facto para la seguridad de aplicaciones web. Conoce las 10 vulnerabilidades más críticas.</p>
+            </a>
+            <a href="#" class="block p-6 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Framework NIST</h5>
+                <p class="font-normal text-slate-700 dark:text-slate-400">Guía de ciberseguridad para mejorar la infraestructura crítica. Identificar, Proteger, Detectar, Responder, Recuperar.</p>
+            </a>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

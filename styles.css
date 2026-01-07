@@ -1,0 +1,45 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap');
+
+/* Estilos base para scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Tipografía 'Hacker' para títulos */
+h1, h2, h3, .mono-font {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Accesibilidad: Focus visible de alto contraste */
+*:focus-visible {
+    outline: 3px solid #06b6d4; /* Color cyan */
+    outline-offset: 2px;
+}
+
+/* Animación botón WhatsApp */
+.whatsapp-float {
+    transition: transform 0.3s ease-in-out;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Scrollbar personalizado (Cyberpunk vibe) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+    background: #06b6d4;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0891b2;
+}
